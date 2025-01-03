@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Hitesh Portfolio</title>
+  <meta name="description" content="Say my Name, I am Hitesh Sonawane" />
+
+  <link rel="icon" type="image/png" href="/icon/32x32.png" />
+
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icon/180x180.png" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Hitesh's Portfolio" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#f6d4b1" />
+
+  <meta property="og:title" content="Hitesh's Portfolio" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hiteshsonawane.netlify.app/" />
+
+  <meta name="og:description"
+    content="Final-year Engineering student with a strong foundation in Data Structures, Algorithms, and Database Management. Passionate about Web Development, Cloud Engineering, and DevOps, excelling in problem-solving and applying innovative technologies to tackle real-world challenges." />
+  <link rel="manifest" href="/manifest.json" />
+  <script type="module" src="/src/main.ts"></script>
+</head>
+
+<body>
+  <div id="home"></div>
+
+  <canvas class="webgl"></canvas>
+
+  <div id="hero-backup">
+    <h3>Hi there, I’m</h3>
+    <h1>Hitesh</h1>
+    <ul>
+      <li>Final-year Engineering student skilled in Data Structures, Algorithms, and Database Management, with a passion for Web Development, Cloud Engineering, and DevOps.</li>
+      <li>Dedicated to solving real-world challenges through innovative technologies and continuous learning</li>
+    </ul>
+  </div>
+
+  <nav>
+    <div class="menu-btn">
+      <button class="btn" onclick="toggleMenu()">
+        <svg width="16" height="16">
+          <rect class="st0" width="16" height="3.2" />
+          <rect y="6.4" class="st0" width="16" height="3.2" />
+          <rect y="12.8" class="st0" width="16" height="3.2" />
+        </svg>
+      </button>
+      <div style="display: flex">
+        <a class="btn" href="https://www.linkedin.com/in/hitesh-sonawane-0a3129257/" target="_blank">
+          <svg width="16" height="16">
+            <path d="M0.1,2c0-1,0.8-1.8,1.9-1.8c1,0,1.8,0.9,1.8,1.8c0,1-0.8,1.9-1.8,1.9C0.9,3.9,0.1,3.1,0.1,2z M0.1,5h3.7v9.8
+            H0.1V5z" />
+            <path d="M15.9,8.5v6.2h-3.5V9.4c0-0.9-0.6-1.6-1.5-1.6c-0.8,0-1.4,0.6-1.4,1.5v5.5H5.8V5h3.7v1
+            c0.6-0.7,1.6-1.2,2.8-1.2C14.4,4.7,15.9,6.3,15.9,8.5z" />
+          </svg>
+        </a>
+
+        <a class="btn" href="https://github.com/Hvshitesh" target="_blank">
+          <svg width="16" height="16">
+            <path d="M10.6,12.9c0-1-0.3-1.6-0.7-2c2.4-0.3,4.9-1.1,4.9-5.2c0-1.1-0.4-2.1-1.1-2.9c0.1-0.3,0.5-1.3-0.1-2.8
+            c0,0-0.9-0.3-3,1.1c-1.7-0.5-3.6-0.5-5.4,0c-2-1.4-3-1.1-3-1.1C1.6,1.4,2,2.5,2.1,2.8C1.4,3.5,1,4.6,1,5.6c0,4.1,2.5,5,4.9,5.3
+            c-0.4,0.4-0.6,0.9-0.7,1.4c-0.6,0.3-2.2,0.7-3.1-0.9c0,0-0.6-1-1.6-1.1c0,0-1.1,0-0.1,0.7c0,0,0.7,0.3,1.1,1.6c0,0,0.6,2.1,3.6,1.5
+            c0,0.9,0,1.8,0,1.8h5.3C10.6,15.9,10.6,14.4,10.6,12.9z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="menu-body" onclick="closeMenu()">
+      <a href="#home" onclick="closeMenu()">Home</a>
+      <a href="#aboutMe" onclick="closeMenu()">About</a>
+      <a href="#skills" onclick="closeMenu()">Skills</a>
+      <a href="#experience" onclick="closeMenu()">Experience</a>
+      <a href="#projects" onclick="closeMenu()">Projects</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+    </div>
+
+    <div id="tip-scroll">Scroll &#8595;</div>
+  </nav>
+
+  <main>
+    <section>
+      <h1 id="aboutMe">Hi there</h1>
+      <p>
+        I am Hitesh Sonawane, I am a final-year Bachelor of Engineering student at Pune Institute of Computer Technology 
+        with a passion for Web Development, Cloud Engineering, and DevOps. 
+      <p>
+        I excel in problem-solving with a strong foundation in Data Structures, Algorithms, Operating Systems, and Database Management,
+        aiming to drive innovation and address real-world challenges in dynamic environments.
+      </p>
+      <p>
+        Below are details of some my Skills, Experience and Projects
+      </p>
+    </section>
+
+    <section id="skills">
+      <h1>Skills</h1>
+      <ul class="skills">
+        <li>Django ,Django Rest Framework</li>
+        <li>React JS, NodeJS , ExpressJS</li>
+        <li>Tailwind CSS, Bootstrap</li>
+        <li>Flask, Fast API</li>
+        <li>Kubernetes ,Jenkins , Docker</li>
+        <li>AWS(s3, ec2, cloudfront)</li>
+        <li>MongoDB, PostgreSQL, Redis, MySQL</li>
+        <li><b>Core Subjects:</b> DSA, OOP, SD, DBMS, OS.</li>
+      </ul>
+    </section>
+
+
+
+
+    <section>
+      <h1 id="experience">Experience</h1>
+      <div class="skills">
+        <div>
+          <h3>Backend Developer Intern</h3>
+          <p>VMC | Jun - 2023</p>
+          <ul class="skills">
+            <li>Worked with the tech team to build APIs using DRF, dockerize the platform, and
+              restructure the backend infrastructure</li>
+            <li>Executing pre-requests, testing them and automating the testing processes
+              using Newman CLI of postman and GitHub actions.</li>
+            <li>Responsible for independent management of runtime production testing and
+              debugging processes to prevent bugs and identify and correct them without
+              delay.              
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Software Developer Intern</h3>
+          <p>Neotech Solutions | Oct - 2023</p>
+          <ul class="skills">
+            <li>Streamlined development with Jenkins, Docker, Python, and Bash for build
+              automation and deployment.</li>
+            <li>Managed AWS infrastructure, including Lambda functions, EC2 instances, VPCs,
+              and security groups, using AWS CloudFormation for efficient resource
+              management. Prepared data for analysis by ingesting and cleaning from MySQL,
+              MSSQL, and DynamoDB</li>
+            <li>Built an automated anti-piracy tool and reporting dashboard using Django Rest
+              Framework, Selenium, Pandas, Nginx, Bootstrap, and jQuery.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>DevOps Engineer Intern</h3>
+          <p>Cloudanix | Jan - 2024</p>
+          <ul class="skills">
+            <li>Established a continuous integration pipeline for a web application using
+              Jenkins, ensuring automated builds and tests upon new code pushes to the
+              repository. Emphasized reliability and efficiency in the pipeline setup to deliver
+              prompt feedback to the development team in case of any issues.
+              </li>
+            <li>Automated deployment processes using Ansible, crafting playbooks for
+              streamlined installation and configuration of the application and its
+              dependencies across target servers. Demonstrated proficiency in understanding
+              project requirements, designing infrastructure, and writing efficient and reusable
+              Ansible code.
+              </li>
+            <li>Developed a monitoring dashboard with Grafana, integrating it with various data
+              sources like Prometheus and Elasticsearch
+              </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h1>Projects</h1>
+      <ul class="skills">
+        <div>
+          <h3><a href="https://github.com/Hvshitesh/Online-Judge" target="_blank">Online Judge</a></h3>
+          <p>React.js, Bootstrap, Django Rest Framework, Docker, Azure</p>
+          <ul class="skills">
+            <li>The Online Judge Platform, built with Django, DRF, React, and Docker, offers a
+              comprehensive solution for hosting online contests in data structures and algorithms.
+              It features a robust coding environment supporting C, C++, and Python, along with
+              meticulous test case management to ensure submission precision
+              </li>
+            <li>The use of Docker ensures a secure, consistent execution environment, enhancing the
+              platform’s reliability.              
+              </li>
+            <li>The project represents a well-rounded approach to online coding evaluation and execution</li>
+          </ul>
+        </div>
+      </ul>
+    </section>
+
+    <section>
+      <h1 id="contact">Contact</h1>
+      <p style="text-align: center">
+        Reach out on
+        &nbsp;
+        <a href="https://www.linkedin.com/in/hitesh-sonawane-0a3129257/"><u><b>LinkedIn</b></u></a>
+        &nbsp;
+        <a href="hvshitesh29@gmail.com"><u><b>Mail</b></u></a>
+      </p>
+    </section>
+  </main>
+
+  <input type="text" id="textarea" readonly />
+  <div id="loading">
+    <h2>Booting...</h2>
+    <div id="loading-bar">
+      <div id="loading-bar-progress"></div>
+    </div>
+    <div id="loading-items">Starting...</div>
+  </div>
+  <footer>
+
+  </footer>
+  <script>
+    function closeMenu() {
+      document.getElementsByTagName("nav")[0].classList.remove(["active"]);
+    }
+
+    function toggleMenu() {
+      const nav = document.getElementsByTagName("nav")[0];
+      if (nav.classList.contains("active")) {
+        nav.classList.remove(["active"]);
+      } else {
+        nav.classList.add("active");
+      }
+    }
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDNKHGV4HB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-EDNKHGV4HB");
+  </script>
+</body>
+
+</html>
