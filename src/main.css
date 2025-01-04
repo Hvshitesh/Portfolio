@@ -198,9 +198,10 @@ p {
 }
 
 .skills li {
-  padding: 4px 0;
-  position: relative;
-  transition: all 0.3s ease;
+  display: inline-block;
+  padding: 4px 8px;
+  border: dashed 1px var(--color);
+  box-shadow: 1px 1px 0px #f6d4b1, 4px 4px 0px rgba(82, 82, 82, 0.25);
 }
 
 .skills li::before {
@@ -218,12 +219,11 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
-  margin: auto;
 }
 
 .image * {
   box-sizing: border-box;
-  width: clamp(0px, 95vw, 1200px);
+  width: clamp(10px, 84vw, 700px);
 
   box-shadow: 1px 1px 0px #f6d4b1, 6px 6px 0px rgba(82, 82, 82, 0.25);
 }
