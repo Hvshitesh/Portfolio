@@ -186,25 +186,31 @@ p {
   margin: auto;
   box-sizing: border-box;
 }
+
 .skills {
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-
-  text-align: center;
-  list-style-type: none;
-  transition: all 0.3s;
+  flex-direction: column; /* Stack the list items vertically */
+  gap: 8px; /* Reduce gap between items for a cleaner look */
+  text-align: left; /* Align text to the left */
+  list-style-type: disc; /* Set the bullet style */
+  padding-left: 20px; /* Indentation for bullet points */
+  transition: all 0.3s ease;
 }
 
 .skills li {
-  display: inline-block;
-  padding: 4px 8px;
-  border: dashed 1px var(--color);
-  box-shadow: 1px 1px 0px #f6d4b1, 4px 4px 0px rgba(82, 82, 82, 0.25);
+  padding: 4px 0;
+  position: relative;
+  transition: all 0.3s ease;
 }
+
+.skills li::before {
+  content: "•"; /* Custom bullet symbol */
+  position: absolute;
+  left: -20px; /* Adjust the bullet position */
+  font-size: 20px; /* Bullet size */
+  color: var(--color); /* Color for the bullet */
+}
+
 
 .image {
   display: flex;
