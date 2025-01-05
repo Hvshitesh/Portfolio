@@ -30,6 +30,12 @@
     />
     <link rel="manifest" href="/manifest.json" />
     <script type="module" src="/src/main.ts"></script>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   </head>
 
   <body>
@@ -295,16 +301,80 @@
               </li>
               <li>• Take a glimpse of our site's <a href="https://ctdncc23.netlify.app/">Online Judge.</a></li>
         <br />
-        <div class="image">
-          <img
-            src="/src/img/Online-Judge.png"
-            width="100%"
-            alt="Online Judge screenshot"
-            loading="lazy"
-            style="aspect-ratio: 2443 / 1576"
-          />
-            </ul>
+        <div class="image swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="/src/img/Online-Judge/Online-Judge1.png"
+                alt="Online Judge screenshot"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="src/img/Online-Judge/Online-Judge2.png"
+                alt="Another screenshot"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="src/img/Online-Judge/Online-Judge3.png"
+                alt="Third screenshot"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="src/img/Online-Judge/Online-Judge4.png"
+                alt="Third screenshot"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="src/img/Online-Judge/Online-Judge5.png"
+                alt="Third screenshot"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="src/img/Online-Judge/Online-Judge6.png"
+                alt="Third screenshot"
+                loading="lazy"
+              />
+            </div>
           </div>
+          <!-- Navigation controls -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        
+        
+
+        <script>
+          const swiper = new Swiper('.swiper-container', {
+            loop: true, // Enable infinite loop
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+            slidesPerView: 1, // Single image at a time
+            spaceBetween: 4, // Minimal spacing
+            autoplay: {
+              delay: 3000, // Auto-slide every 3 seconds
+              disableOnInteraction: false,
+            },
+          });
+        </script>
+        
+        
+        
+        
 
           <hr />
 
