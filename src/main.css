@@ -313,7 +313,7 @@ a:active {
   transform: scale(0.95);
   box-shadow: 4px 4px 0px rgba(82, 82, 82, 0.4);
 }
-
+/* 
 .portrait {
   position: relative;
   width: clamp(0px, 95vw, 780px);
@@ -352,5 +352,5 @@ a:active {
   filter: blur(30px);
   color: #f6d4b1;
   border: #f6d4b1 solid 1px;
-}
+} */
 
